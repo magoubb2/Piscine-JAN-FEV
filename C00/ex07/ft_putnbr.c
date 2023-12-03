@@ -27,7 +27,7 @@ void ft_putnbr(int nb)
 
 int main(void)
 {
-    int nb = 314;
+    int nb = -2147483648;
     printf("    %i\n", nb);
 
     ft_putnbr(nb);
