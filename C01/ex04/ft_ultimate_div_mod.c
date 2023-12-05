@@ -1,10 +1,16 @@
 
 #include <stdio.h>
 
+// Stok the value of *a in tmp so that when we wnt to get the mod
+// the value of '*a' doesn' change.
+
 void ft_ultimate_div_mod(int *a, int *b)
 {
-	*a = *a / *b;
-	*b = *a % *b;
+	int tmp;
+
+	tmp = *a;
+	*a = tmp / *b;
+	*b = tmp % *b;
 }
 
 int main(void)
