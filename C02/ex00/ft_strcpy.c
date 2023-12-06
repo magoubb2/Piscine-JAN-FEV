@@ -27,4 +27,5 @@ int main(void)
 
 	printf("%s\n", ft_strcpy(dest, src));
 	printf("%s\n", strcpy(dest, src));
+	return (0);
 }
