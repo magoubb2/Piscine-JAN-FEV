@@ -26,10 +26,9 @@ char *ft_strncpy(char *dest, char *src, unsigned int n)
 
 int main(void)
 {
+	char src[15] = "world yoyololo";
+	char dest[15] = "hello ";
 	const unsigned int n = 15;
-	char dest[n];
-	bzero(dest, n);
-	char src[] = "world yoyololo";
 
 	printf("%s\n", ft_strncpy(dest, src, n));
 	printf("%s\n", strncpy(dest, src, n));
