@@ -19,7 +19,7 @@ char *ft_strcapitalize(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] == ' ')
+		if (str[i] == ' ' || str[i] == '+' || str[i] == '-')
 		{
 			if (str[i + 1] >= 'a' && str[i + 1] <= 'z')
 				str[i + 1] = str[i + 1] - 32;
@@ -31,7 +31,7 @@ char *ft_strcapitalize(char *str)
 
 int main(void)
 {
-	char str[] = "         BLABLA+BLABLA.";
+	char str[] = "         123BLABLA-BLABLA.";
 
 	printf("%s\n", ft_strcapitalize(str));
 }
