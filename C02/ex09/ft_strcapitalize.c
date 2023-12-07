@@ -1,6 +1,8 @@
 
 #include <stdio.h>
 
+//
+
 char *ft_strcapitalize(char *str)
 {
 	int i;
