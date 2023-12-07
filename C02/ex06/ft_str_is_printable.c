@@ -3,7 +3,7 @@
 
 int ft_str_is_printable(char *str)
 {
-		int i;
+	int i;
 
 	i = 0;
 	while (str[i])
@@ -20,7 +20,7 @@ int main(void)
 	char str[] = "avc∆e";
 	char str1[] = "12345";
 	char str2[] = "abc*&";
-	char str3[] = "œ∑∂¶™¥ π";
+	char str3[] = "œ∑∂¶™¥πéèàçà^çàç^èà^èçè^çà";
 
 	printf("%i\n", ft_str_is_printable(str));
 	printf("%i\n", ft_str_is_printable(str1));
