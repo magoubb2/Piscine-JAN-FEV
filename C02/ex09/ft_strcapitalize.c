@@ -1,7 +1,11 @@
 
 #include <stdio.h>
 
-//
+// Step one: Convert every character into lower case.
+// Step two: Capitalize the first letter if it's not
+// already a capitalized letter.
+// Step three: Capitalize the letter that have: space,
+// plus sign and minus sign before them.
 
 char *ft_strcapitalize(char *str)
 {
