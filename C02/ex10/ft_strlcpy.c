@@ -8,7 +8,7 @@
 // Step 2: If total of src + '\0' is less than the size the entire src string
 // is copied to the destination buffer and the destination buffer is NULL
 // terminated.
-// Step 3: 
+// Step 3:
 
 int ft_strlen(char *str)
 {
