@@ -1,18 +1,14 @@
 
 #include <unistd.h>
+#include <stdio.h>
 
-void hexa(int nb)
+void hexa(unsigned int nb)
 {
 	char *hex;
 
 	hex = "0123456789abcdef";
-	if (nb > 16)
-	{
-		hexa(nb / 16);
-		hexa(nb % 16);
-	}
-	write(1, "0", 1);
-	write(1, &hex[nb], 1);
+	write(1, &hex[nb / 16], 1);
+	write(1, &hex[nb % 16], 1);
 }
 
 void ft_putstr_non_printable(char *str)
@@ -23,22 +19,31 @@ void ft_putstr_non_printable(char *str)
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] >= 30 && str[i] <= 126)
+		if (str[i] > 31 && str[i] <= 126)
 			write(1, &str[i], 1);
-		// else if (str[i] == 127)
-		// 	write(1, "7f", 2);
 		else
 		{
 			write(1, "\\", 1);
-			hexa((int)str[i]);
+			hexa((unsigned int)str[i]);
 		}
 		i++;
 	}
 }
 
-int main(void)
+int	main(void)
 {
-	char str[] = "\r\f\b\v\a\t\e";
+	char	str[32];
+	int		i;
 
+	i = 0;
+	while (i < 32 - 1)
+	{
+		str[i] = i + 1;
+		i++;
+	}
+	str[31] = '\0';
+	ft_putstr_non_printable("Coucou\ntu vas bien ?");
+	printf("%s \n", "");
 	ft_putstr_non_printable(str);
+	printf("%s \n", "");
 }
