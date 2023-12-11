@@ -8,7 +8,7 @@
 // Exemple if the char in s1 is 'l' in ascii->(108) and s2 is 7
 // in ascii->(55) then the difference is '53'.
 // If s1 and s2 are identicall until the '\0' is reached,
-// we return '0'.
+// we return (0);
 int ft_strcmp(char *s1, char *s2)
 {
 	int i;
