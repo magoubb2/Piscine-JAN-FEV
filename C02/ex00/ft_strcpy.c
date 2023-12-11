@@ -22,8 +22,8 @@ char *ft_strcpy(char *dest, char *src)
 
 int main(void)
 {
+	char src[] = "worlLOLOL";
 	char dest[] = "hello";
-	char src[] = "worl";
 
 	printf("%s\n", ft_strcpy(dest, src));
 	printf("%s\n", strcpy(dest, src));
