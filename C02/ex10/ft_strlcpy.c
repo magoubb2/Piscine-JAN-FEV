@@ -20,7 +20,7 @@ int ft_strlen(char *str)
     return (i);
 }
 
-void ft_memcpy (char *dest, char *src, unsigned int num )
+void ft_memcpy (char *dest, char *src, unsigned int num)
 {
     int i;
 
