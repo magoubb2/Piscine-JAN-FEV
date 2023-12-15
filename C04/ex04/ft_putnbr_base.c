@@ -25,19 +25,15 @@ void ft_putnbr_base(int nbr, char *base)
         nbr = -nbr;
     }
     if (nbr >= base_len)
-    {
         ft_putnbr_base(nbr / base_len, base);
-        ft_putnbr_base(nbr % base_len, base);
-    }
-    else 
-    {
-        write(1,&base[nbr], 1);
-    }
+    write(1,&base[nbr % base_len], 1);
 }
 
 int	main(void)
 {
 	ft_putnbr_base(0xFAA33CC, "01");
+	printf("\n");
+	ft_putnbr_base(10, "0123456789ABCDEF");
 	printf("\n");
 	ft_putnbr_base(0xFAA33CC, "0123456789ABCDEF");
 	printf("\n");
