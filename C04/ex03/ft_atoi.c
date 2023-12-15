@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
+// This implementation of atoi does not have to handle int overflows.
+// 
 int ft_atoi(char *str)
 {
     int i;
@@ -22,8 +24,6 @@ int ft_atoi(char *str)
     }
     while (str[i] > 9)
     {
-        if (res > INT_MAX)
-            return (-1);
         res = res * 10 + str[i] - 48;
         i++;
     }
