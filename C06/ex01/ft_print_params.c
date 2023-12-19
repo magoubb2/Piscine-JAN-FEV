@@ -9,8 +9,8 @@
 // (j) is for iterating trougth character in each arguments.
 //          -> (j) is given the value of '0' inside of the first while loop
 //             to initialise the counter for the current argument.
-// The first while loop continue until (i) is no longer less than (argc) so
-// while (i) is less than (argc) we increment (i),
+// The first while loop continue until (i) is no longer more than or  equal
+// to (1) so while (i) is more than (1) we decrement (i).
 // The second loop write each character of the current argument  until  the 
 // NULL character is reach.
 int main(int argc, char **argv)
