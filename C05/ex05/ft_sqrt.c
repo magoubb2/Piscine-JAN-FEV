@@ -3,7 +3,7 @@
 
 // Calculate the square root of a given non-negative integer.
 // The while loop continue until (x) is no longer more than y.
-// Exemple : 64
+// Exemple : nb: 64
 // 64 = (64 + 1) / 2 -> 32
 // 1 = 64 / 32 -> 2
 //
