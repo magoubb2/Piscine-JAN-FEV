@@ -37,7 +37,6 @@ int *ft_range(int min, int max)
     return (tab);
 }
 
-
 int main(void)
 {
     int min = 5;
