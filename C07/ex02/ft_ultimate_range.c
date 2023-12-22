@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 
- // takes a pointer to a pointer to an integer (int **range) as its first parameter. 
- // This pointer is used to store the address of the  dynamically  allocated  array.
- // Fill the array with consecutive integers in the specified range
+// takes a pointer to a pointer to an integer (int **range) as its first parameter. 
+// This pointer is used to store the address of the  dynamically  allocated  array.
+// Fill the array with consecutive integers in the specified range
+// designed to update a pointer (int **range) provided as an  argument  and  return 
+// the value of the first element.
 int ft_ultimate_range(int **range, int min, int max)
 {
     unsigned int i;
