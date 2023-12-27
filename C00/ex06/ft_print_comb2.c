@@ -16,10 +16,10 @@ void comb(int a, int b)
     comb[2] = ' ';
     comb[3] = (b / 10) + 48;
     comb[4] = (b % 10) + 48;
-    printf(" \ndivision a:->%i", (a / 10));
-    printf(" \nmodulo a:->  %i", (a % 10));
-    printf(" \ndivision b:->%i", (b / 10));
-    printf(" \nmodulo b:->  %i\n", (b % 10));
+    // printf(" \ndivision a:->%i", (a / 10));
+    // printf(" \nmodulo a:->  %i", (a % 10));
+    // printf(" \ndivision b:->%i", (b / 10));
+    // printf(" \nmodulo b:->  %i\n", (b % 10));
 
     write(1, comb, 5);
     coma_space(a, b);
