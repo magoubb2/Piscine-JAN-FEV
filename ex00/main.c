@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marbaron <marbaron@student.42.fr>          +#+  +:+       +#+        */
+/*   By: margueritebaronbeliveau <margueritebaro    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 15:12:53 by marbaron          #+#    #+#             */
-/*   Updated: 2024/01/13 17:38:23 by marbaron         ###   ########.fr       */
+/*   Updated: 2024/01/14 10:05:51 by margueriteb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@ void	rush(int x, int y);
 
 int main(void)
 {
-	rush(104, 124);
+	rush(10, 10);
 	return (0);
 }

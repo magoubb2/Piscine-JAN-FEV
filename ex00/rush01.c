@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush03.c                                           :+:      :+:    :+:   */
+/*   rush01.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: margueritebaronbeliveau <margueritebaro    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/13 16:40:32 by marbaron          #+#    #+#             */
-/*   Updated: 2024/01/13 19:25:28 by margueriteb      ###   ########.fr       */
+/*   Updated: 2024/01/14 10:06:18 by margueriteb      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 
 void	ft_putchar(char c);
 
+// Need to fix when only x:1 or y:1
+
 void	rush(int x, int y)
 {
 	int	horizontal_x;
 	int	vertical_y;
-	
 	if (x <= 0 || y <= 0)
 		return ;
 	vertical_y = 1;
@@ -28,14 +29,14 @@ void	rush(int x, int y)
 		while (horizontal_x <= x)
 		{
 			// Conditon pour les position du 'A'.
-			if ((horizontal_x == 1 && vertical_y == 1) || (horizontal_x == 1 && vertical_y == y))
-				ft_putchar('A');
+			if ((horizontal_x == 1 && vertical_y == 1) || (horizontal_x == x && vertical_y == y))
+				ft_putchar('/');
 			// Conditon pour les position du 'C'.
-			else if ((horizontal_x == x && vertical_y == 1) || (horizontal_x == x && vertical_y == y))
-				ft_putchar('C');
+			else if ((horizontal_x == x && vertical_y == 1) || (horizontal_x == 1 && vertical_y == y))
+				ft_putchar('\\');
 			// Conditon pour les position du 'B'.
 			else if ((horizontal_x == 1 || horizontal_x == x) || (vertical_y == y || vertical_y == 1))
-				ft_putchar('B');
+				ft_putchar('*');
 			// Conditon pour les position des ' '.
 			else
 				write(1, " ", 1);
